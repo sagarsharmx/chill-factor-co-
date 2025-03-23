@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chill Factory Co. - Best Summer Gadgets</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&display=swap');
+
+        body {
+            font-family: 'Playfair Display', serif;
+            background-color: #f5f5f5;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+
+        header {
+            background-color: #000;
+            color: white;
+            padding: 20px;
+            font-size: 2.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+        }
+
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            padding: 20px;
+            gap: 20px;
+        }
+
+        .product {
+            background-color: #fff;
+            border: 2px solid #000;
+            border-radius: 12px;
+            padding: 20px;
+            width: 250px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            cursor: pointer;
+            overflow: hidden;
+        }
+
+        .product:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.2);
+        }
+
+        .product img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .product:hover img {
+            transform: scale(1.05);
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            color: #000;
+            font-weight: bold;
+        }
+
+        .btn {
+            background-color: #000;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            margin-top: 10px;
+            transition: background-color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #333;
+        }
+
+        .reviews {
+            margin-top: 10px;
+            font-size: 0.9rem;
+            color: #666;
+            text-align: left;
+        }
+
+        .review {
+            margin-top: 10px;
+            background-color: #f9f9f9;
+            padding: 10px;
+            border-left: 4px solid #000;
+            font-style: italic;
+            color: #444;
+        }
+
+        .review strong {
+            display: block;
+            font-weight: bold;
+            color: #000;
+            margin-bottom: 5px;
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(20px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .product {
+            animation: fadeInUp 0.5s ease forwards;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Chill Factory Co. - Best Summer Gadgets
+    </header>
+
+    <div class="container">
+        <div class="product">
+            <img src="https://via.placeholder.com/250" alt="Portable Neck Fan">
+            <h2>Portable Neck Fan</h2>
+            <p>Stay cool on the go with a rechargeable neck fan!</p>
+            <button class="btn">Buy Now</button>
+            <div class="reviews">
+                <div class="review"><strong>Emily R.</strong> “Absolutely love this fan — lightweight and powerful!”</div>
+                <div class="review"><strong>Jake M.</strong> “Keeps me cool during summer hikes!”</div>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/250" alt="Smart Cooling Towel">
+            <h2>Smart Cooling Towel</h2>
+            <p>Instant cool-down with advanced hyper-evaporative material.</p>
+            <button class="btn">Buy Now</button>
+            <div class="reviews">
+                <div class="review"><strong>Sophia L.</strong> “Works like magic — highly recommend!”</div>
+                <div class="review"><strong>Chris K.</strong> “Great for gym and running.”</div>
+            </div>
+        </div>
+
+        <div class="product">
+            <img src="https://via.placeholder.com/250" alt="Solar-Powered Phone Charger">
+            <h2>Solar-Powered Phone Charger</h2>
+            <p>Charge your devices using the power of the sun.</p>
+            <button class="btn">Buy Now</button>
+            <div class="reviews">
+                <div class="review"><strong>Amanda W.</strong> “Perfect for camping!”</div>
+                <div class="review"><strong>Tom H.</strong> “Charges super fast — very handy!”</div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
